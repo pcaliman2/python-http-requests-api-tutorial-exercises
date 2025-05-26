@@ -1,7 +1,6 @@
 import requests
 
-response = requests.post("https://assets.breatheco.de/apis/fake/sample/save-project-json.php")
-
+url = "https://assets.breatheco.de/apis/fake/sample/save-project-json.php"
 
 Datos = {
     "id": 2323,
