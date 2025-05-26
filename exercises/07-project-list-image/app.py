@@ -7,13 +7,10 @@ respuesta = response.status_code
 
 if (respuesta==200):
     Datos = response.json()
-    NumeroElentos = len(Datos)
-    UltimoProyecto = Datos[-1]
+    UltimoProyecto = Datos[(len(Datos))-1]
     ImagenesCurso = UltimoProyecto["images"]
-
-    elementos = len(UltimoProyecto)
-    last_image_url = last_project["images"][-1]
-    print(last_image_url)
+    url_UltimaImagen = last_project["images"][-1]
+    print(url_UltimaImagen)
 else:
     print("Something went wrong")
 
